@@ -11,7 +11,6 @@ RUN dpkg -i /tmp/go-server.deb
 RUN rm /tmp/go-server.deb
 
 EXPOSE 8153
-EXPOSE 8154
 
 CMD ["/etc/init.d/go-server", "start"]
 CMD /etc/init.d/go-server start && tail -f /var/log/go-server/go-server.log

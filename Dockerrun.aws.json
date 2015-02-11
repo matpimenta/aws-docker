@@ -11,6 +11,7 @@
   ],
   "Volumes": [
     {
+        "HostDirectory": "/var/app/gocd"
     }
   ],
   "Logging": "/var/log/gocd"
