@@ -11,7 +11,8 @@
   ],
   "Volumes": [
     {
-        "HostDirectory": "/var/app/gocd"
+        "HostDirectory": "/var/app/gocd",
+        "ContainerDirectory": "/etc/gocd"
     }
   ],
   "Logging": "/var/log/gocd"
