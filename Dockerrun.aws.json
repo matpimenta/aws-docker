@@ -1,0 +1,17 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "extraordinaire/docker-gocd-server",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "8153"
+    }
+  ],
+  "Volumes": [
+    {
+    }
+  ],
+  "Logging": "/var/log/gocd"
+}
