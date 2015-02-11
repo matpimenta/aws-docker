@@ -1,13 +1,12 @@
-FROM ubuntu:13.10
-MAINTAINER Andrei Serdeliuc, andrei@apikot.com
+FROM ubuntu:14.04
+MAINTAINER Mateus Pimenta
 
-RUN echo "deb http://archive.ubuntu.com/ubuntu saucy main universe" > /etc/apt/sources.list
 RUN apt-get -y update && apt-get -y upgrade
 RUN apt-get install -y wget openjdk-7-jre-headless curl unzip
 
 ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
 
-RUN wget -O /tmp/go-server.deb http://download01.thoughtworks.com/go/13.4.1/ga/go-server-13.4.1-18342.deb
+RUN wget -O /tmp/go-server.deb http://download.go.cd/gocd-deb/go-server-14.4.0-1356.deb
 RUN dpkg -i /tmp/go-server.deb
 RUN rm /tmp/go-server.deb
 
